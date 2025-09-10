@@ -2,14 +2,6 @@
   padding: 0;
   margin: 0;
 }
-@media (max-width: 680px) {
-  section {
-    padding: 15px;
-  }
-  h1 {
-    font-size: 2em;
-  }
-}
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -17,18 +9,20 @@ body {
 
 header {
   color: aliceblue;
-  background-color: rgb(176, 176, 228);
-  background-image: linear-gradient(rgb(136, 0, 255), rgb(0, 162, 255));
+  background-color: rgb(0, 162, 255);
   width: 100%;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
 }
-
 section {
-  background-image: linear-gradient(rgb(0, 162, 255), rgb(136, 0, 255));
-  /* margin: 15px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(rgb(0, 162, 255), rgb(255, 255, 255));
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -40,22 +34,6 @@ img {
 }
 .bars {
   width: 90%;
-}
-
-.des1 {
-  gap: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  margin-left: 10px;
-  background-image: linear-gradient(aqua, rgb(136, 0, 255));
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  margin: 10px;
-  margin-top: 30px;
-  padding: 10px 30px;
-  width: 280px;
 }
 tr {
   display: flex;
@@ -70,23 +48,45 @@ tr {
   align-items: center;
   height: 150px;
   margin-left: 10px;
-  background-image: linear-gradient(aqua, rgb(136, 0, 255));
+  background-color: aliceblue;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
   margin: 10px;
   padding: 10px 30px;
   width: 280px;
+  box-shadow: 3px 3px 3px grey;
 }
 
 footer {
-  background-color: rgb(81, 81, 243);
-  background-image: linear-gradient(rgb(136, 0, 255), rgb(0, 162, 255));
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 70px;
-  /* margin: 5px; */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: aliceblue;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 680px) {
+  body {
+    height: 100vh;
+  }
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  section {
+    padding: 15px;
+    align-items: center;
+  }
+  .des {
+    height: auto;
+    padding: 15px;
+  }
+  img {
+    height: 80%;
+  }
+  footer {
+    font-size: 0.1.em;
+  }
 }
